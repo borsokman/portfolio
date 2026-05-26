@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sagyn Osmonaliev — Full-Stack Developer</title>
+    <title>Sagyn Osmonaliev Portfolio</title>
     <meta
       name="description"
       content="Portfolio of Your Name, full-stack developer."
@@ -16,16 +16,17 @@
     <header class="container header">
       <div class="top">
         <div>
-          <h1>Your Name</h1>
-          <p class="role">Full‑Stack Developer</p>
+          <h1>Sagyn Osmonaliev</h1>
+          <p class="role">Software Engineering Student</p>
           <p class="pitch">
-            I build <strong>[what]</strong> for <strong>[who]</strong>, focusing
-            on <strong>[outcome: speed, reliability, UX]</strong>.
+            Software developer with a medical background, finishing a 2‑year program at gritlab (6 months each of Go, JavaScript, Rust) and currently completing a Cloud/DevOps specialization. I am interested in applying AI software to the healthcare system.
           </p>
         </div>
 
+        <img src="assets/img/avatar.jpg" alt="Sagyn Osmonaliev" class="avatar" />
+
         <nav class="links" aria-label="Primary">
-          <a href="mailto:borsokman@proton.me">borsokman@proton.me</a>
+          <a href="mailto:borsokman@proton.me">Email</a>
           <a
             href="https://github.com/borsokman"
             target="_blank"
@@ -45,10 +46,14 @@
       </div>
 
       <nav class="jump" aria-label="Project jump links">
-        <a href="#p1">bomber-man</a>
+        <a href="#p1">make-your-game</a>
         <a href="#p2">real-time-forum</a>
         <a href="#p3">filler</a>
         <a href="#p4">smart-road</a>
+        <a href="#p5">bomberman-dom</a>
+        <a href="#p6">cloud-design</a>
+        <a href="#p7">orchestrator</a>
+        <a href="#p8">groupie-tracker</a>
       </nav>
     </header>
 
@@ -56,16 +61,14 @@
       <!-- bomber-man -->
       <section id="p1" class="project">
         <div class="project-text">
-          <h2>bomber-man</h2>
-          <p class="summary">Single-player video game.</p>
+          <h2>make-your-game</h2>
+          <p class="summary">Single-player video game version of bomberman.</p>
           <ul>
-            <li><strong>Impact:</strong> [metric/outcome].</li>
-            <li><strong>Role:</strong> game logic and sound effects.</li>
+            <li><strong>Role:</strong> sound effects.</li>
+            <li>
+              <strong>Tech:</strong> JavaScript • Adobe Photoshop • Audacity
+            </li>
           </ul>
-
-          <p class="tech">
-            <strong>Tech:</strong> JavaScript • Adobe Photoshop • Audacity
-          </p>
 
           <div class="buttons">
             <a
@@ -91,7 +94,7 @@
             controls
             preload="metadata"
             playsinline
-            poster="assets/img/bomber-man.jpg"
+            poster="assets/img/make-your-game.jpg"
           >
             <source src="assets/video/bomber-man.mp4" type="video/mp4" />
             Sorry—your browser doesn’t support embedded video.
@@ -104,16 +107,12 @@
           <h2>real-time-forum</h2>
           <p class="summary">Forum with posts feed and real time chat.</p>
           <ul>
-            <li><strong>Impact:</strong> [metric/outcome].</li>
             <li>
               <strong>Role:</strong> backend and frontend of the website,
               database.
             </li>
+            <li><strong>Tech:</strong> JavaScript • Golang • HTML/CSS</li>
           </ul>
-
-          <p class="tech">
-            <strong>Tech:</strong> JavaScript • Golang • HTML/CSS
-          </p>
 
           <div class="buttons">
             <a
@@ -157,10 +156,12 @@
           </p>
 
           <ul>
-            <li><strong>Impact:</strong> [metric/outcome].</li>
-            <li><strong>Role:</strong> [what you built/owned].</li>
+            <li>
+              <strong>Role:</strong> input parsing, design and implementention of the core logic.
+              <li><strong>Tech:</strong> Rust • Docker</li>
+            </li>
           </ul>
-          <p class="tech">Tech: Rust • Docker</p>
+        
           <div class="buttons">
             <a
               class="btn"
@@ -168,13 +169,6 @@
               target="_blank"
               rel="noreferrer"
               >GitHub</a
-            >
-            <a
-              class="btn secondary"
-              href="http://127.0.0.1:5500/make-your-game/index.html"
-              target="_blank"
-              rel="noreferrer"
-              >Live</a
             >
           </div>
         </div>
@@ -200,25 +194,17 @@
             Autonomous vehicles smart intersection management.
           </p>
           <ul>
-            <li><strong>Impact:</strong> [metric/outcome].</li>
             <li><strong>Role:</strong> intersection logic strategy.</li>
+            <li><strong>Tech:</strong> Rust</li>
           </ul>
-          <p class="tech"><strong>Tech:</strong> Rust</p>
 
           <div class="buttons">
             <a
               class="btn"
-              href="https://github.com/MarkusYPA/make-your-game"
+              href="https://github.com/giAddams/smart-road"
               target="_blank"
               rel="noreferrer"
               >GitHub</a
-            >
-            <a
-              class="btn secondary"
-              href="http://127.0.0.1:5500/make-your-game/index.html"
-              target="_blank"
-              rel="noreferrer"
-              >Live</a
             >
           </div>
         </div>
@@ -229,25 +215,173 @@
             controls
             preload="metadata"
             playsinline
-            poster="assets/img/bomber-man.jpg"
+            poster="assets/img/smart-road.png"
           >
-            <source src="assets/video/bomber-man.mp4" type="video/mp4" />
+            <source src="assets/video/smart-road.mp4" type="video/mp4" />
             Sorry—your browser doesn’t support embedded video.
           </video>
         </div>
       </section>
+
+      <section id="p5" class="project">
+        <div class="project-text">
+          <h2>bomberman-dom</h2>
+          <p class="summary">
+            Multiplayer video game version of bomberman with a lobby chat.
+          </p>
+          <ul>
+            <li><strong>Role:</strong> Design and implementation of the game logic.</li>
+            <li><strong>Tech:</strong> Go • JavaScript • HTML/CSS</li>
+          </ul>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://github.com/cmbigk/bomberman-dom"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="project-media">
+          <img
+            class="poster"
+            src="assets/img/bomberman-dom.png"
+            alt="Poster of the project"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="p6" class="project">
+        <div class="project-text">
+          <h2>cloud-design</h2>
+          <p class="summary">
+        
+          </p>
+          <ul>
+            <li><strong>Role:</strong> Deployent of a microservices application to AWS using Terraform and containerized services running on ECS Fargate. The system is exposed through a secure gateway with authentication, and the services communicate internally through cloud networking. Setting up centralized logging, secret management, and scaling so the deployment is stable and observable.</li>
+            <li><strong>Tech:</strong> AWS CLI • Terraform • Docker</li>
+          </ul>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://github.com/borsokman/cloud-design"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="project-media">
+          <img
+            class="poster"
+            src="assets/img/cloud-design.png"
+            alt="Poster of the project"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="p7" class="project">
+        <div class="project-text">
+          <h2>orchestrator</h2>
+          <p class="summary">
+        
+          </p>
+          <ul>
+            <li><strong>Role:</strong> Containerization and deployment of the microservices to a Kubernetes cluster using standard manifests for deployments, services, and networking. The system was exposed through an ingress/load balancer for external access, while internal service-to-service communication was handled through Kubernetes service discovery. Validation of the deployment by scaling services, monitoring health/logs, and confirmation the APIs work end-to-end.</li>
+            <li><strong>Tech:</strong> Vagrant • VirtualBox • kubectl CLI tool • Docker</li>
+          </ul>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://github.com/borsokman/orchestrator"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="project-media">
+          <img
+            class="poster"
+            src="assets/img/orchestrator.png"
+            alt="Poster of the project"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section id="p8" class="project">
+        <div class="project-text">
+          <h2>groupie-tracker</h2>
+          <p class="summary">
+        
+          </p>
+          <ul>
+            <li><strong>Role:</strong> Developed a Go web application that fetches and visualizes API data with server-side event handling.</li>
+            <li><strong>Tech:</strong> Go • HTML/CSS</li>
+          </ul>
+
+          <div class="buttons">
+            <a
+              class="btn"
+              href="https://github.com/borsokman/groupie-tracker-visualizations"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+            <a
+              class="btn secondary"
+              href="https://groupie-tracker-visualizations.onrender.com/"
+              target="_blank"
+              rel="noreferrer"
+              >Live</a
+            >
+          </div>
+        </div>
+
+        <div class="project-media">
+          <img
+            class="poster"
+            src="assets/img/groupie-tracker.png"
+            alt="Poster of the project"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
     </main>
 
     <footer class="container footer">
       <p>
-        <strong>Contact:</strong> borsokman@proton.me • GitHub/LinkedIn above
+        <strong>Contacts:</strong> <a href="mailto:borsokman@proton.me">borsokman@proton.me</a>
+        <a
+            href="https://github.com/borsokman"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/sagyn-osmonaliev-b9b9a7397/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
       </p>
     </footer>
     <script>
       document.querySelectorAll("video.video").forEach((video) => {
         video.addEventListener("ended", () => {
           video.currentTime = 0;
-          video.load(); // forces the poster image to show again (reliable)
+          video.load();
         });
       });
     </script>

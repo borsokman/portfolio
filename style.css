@@ -1,11 +1,11 @@
 :root {
-  --bg: #ffffff;
-  --text: #111827;
-  --muted: #4b5563;
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #ffffff;
   --border: #e5e7eb;
-  --card: #f9fafb;
-  --accent: #2563eb;
-  --accent2: #1d4ed8;
+  --card: #1c3956;
+  --accent: #000000;
+  --accent2: #ffffff;
 }
 
 * {
@@ -28,13 +28,13 @@ body {
   line-height: 1.5;
   background-image: url("assets/img/background.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 25px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 24px;
 }
@@ -57,14 +57,21 @@ body {
 }
 .top {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 18px;
+  grid-template-columns: 2fr auto auto;
+  gap: 24px;
   align-items: start;
 }
 h1 {
   margin: 0;
   font-size: 2rem;
   letter-spacing: -0.02em;
+}
+.avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
 }
 .role {
   margin: 6px 0 0;
@@ -83,11 +90,16 @@ h1 {
   justify-items: end;
 }
 .links a {
-  color: var(--accent);
+  color: var(--accent2);
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 999px;
   text-decoration: none;
 }
 .links a:hover {
   text-decoration: underline;
+  border-color: #cbd5e1;
 }
 
 .jump {
@@ -169,6 +181,14 @@ h1 {
   border: 1px solid var(--border);
   background: #000;
 }
+
+.poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
 .media-note {
   margin: 8px 0 0;
   font-size: 0.9rem;
