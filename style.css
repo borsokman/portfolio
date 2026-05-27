@@ -57,7 +57,7 @@ body {
 }
 .top {
   display: grid;
-  grid-template-columns: 2fr auto auto;
+  grid-template-columns: 2fr auto auto auto;
   gap: 24px;
   align-items: start;
 }
@@ -211,4 +211,29 @@ h1 {
   .project {
     grid-template-columns: 1fr;
   }
+}
+
+.qr-title {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.qr {
+  margin-top: 28px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+}
+
+.qr-img {
+  display: block;
+  margin-top: 10px;
+  width: 175px;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 5px;
+  border-radius: 12px;
 }
